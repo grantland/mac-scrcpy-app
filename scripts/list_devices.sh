@@ -1,6 +1,8 @@
 #!/bin/bash
-export ANDROID_SDK_HOME=~/Library/Android/sdk
+export ANDROID_SDK_HOME=/opt/android_sdk
 export PATH=${PATH}:${ANDROID_SDK_HOME}/platform-tools
+
+syslog -s -l i "test"
 
 adb kill-server
 adb start-server
